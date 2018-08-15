@@ -9,7 +9,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: url('img/angkor2.jpg');
+    background-image: url('img/DSC_7740.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -20,8 +20,8 @@ header{
 header #menu{
     height: 80px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
@@ -29,9 +29,17 @@ header #menu{
     background-color: rgba(26, 26, 26, 0.356);
 }
 
-header #menu img{
+.logo{
+    display: flex;
     height: 70px;
     cursor: pointer;
+    order: -1;
+    width: 200px;
+    justify-content: center;
+}
+.logo img{
+    height: 72px;
+    width: 120px;
 }
 
 header #menu h5{
@@ -39,7 +47,7 @@ header #menu h5{
     cursor: pointer;
 }
 
-header #menu h5:nth-child(5){
+header #menu h5:nth-child(4){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +55,8 @@ header #menu h5:nth-child(5){
     background-color: rgba(255, 255, 255, 0.308);
     border-radius: 10px;
     width: 80px;
+    padding: 5px;
+    margin-right: 50px;
 }
 
 header h1{
