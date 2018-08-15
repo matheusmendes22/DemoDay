@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    width: 100%;
+
+}
 
 header{
     height: 100vh;
@@ -16,12 +20,13 @@ header{
 header #menu{
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 80vw;
+    width: 100%;
     margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 27px;
+    background-color: rgba(26, 26, 26, 0.356);
 }
 
 header #menu img{
@@ -34,6 +39,15 @@ header #menu h5{
     cursor: pointer;
 }
 
+header #menu h5:nth-child(5){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#5ADBA8;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 10px;
+    width: 80px;
+}
 
 header h1{
     font-size: 130px;
