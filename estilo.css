@@ -1,6 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
 }
 body{
     width: 100%;
@@ -15,18 +20,24 @@ header{
     background-position: center center;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
+
 }
 
-header #menu{
+.top-bar{
+    display: flex;
+    background-color: rgba(100, 100, 100, 0.308);
+
+}
+
+#menu{
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    width: 500px;
     margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 27px;
-    background-color: rgba(26, 26, 26, 0.356);
 }
 
 .logo{
@@ -42,28 +53,37 @@ header #menu{
     width: 120px;
 }
 
-header #menu h5{
+#menu a{
+    color: rgb(255, 254, 254);
+    font-weight: lighter;
+    font-size: 20px;
     font-weight: 400;
     cursor: pointer;
+    margin: 12px;
 }
 
-header #menu h5:nth-child(4){
+#menu a:hover{
+    text-decoration: underline;
+}
+
+header #menu a:nth-child(4){
     display: flex;
     justify-content: center;
     align-items: center;
     color:#5ADBA8;
-    background-color: rgba(255, 255, 255, 0.308);
+    background-color: rgba(100, 100, 100, 0.308);
     border-radius: 10px;
     width: 80px;
     padding: 5px;
     margin-right: 50px;
+    text-decoration: none;
 }
 
 header h1{
     font-size: 130px;
     text-align: center;
     margin-top: 105px;
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 #sec1{
@@ -92,4 +112,25 @@ header h1{
 
 .icone{
     width: 200px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.911);
+}
+.links{
+    order: -1;
+    width: 100px;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
+.newsletter{
+    
+margin-right:35em; 
 }
